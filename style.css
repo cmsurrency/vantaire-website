@@ -88,10 +88,10 @@ textarea {
     height: 34px;
     border: 1px solid rgba(229, 182, 86, 0.7);
     border-radius: 6px;
-    background:
-        linear-gradient(135deg, rgba(229, 182, 86, 0.96), rgba(229, 182, 86, 0.28)),
-        var(--navy);
+    background: var(--white);
     box-shadow: 0 0 30px rgba(229, 182, 86, 0.22);
+    object-fit: contain;
+    padding: 4px;
 }
 
 .nav-links {
@@ -368,7 +368,7 @@ h3 {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 28px;
-    align-items: start;
+    align-items: stretch;
 }
 
 .approach-list {
@@ -389,6 +389,9 @@ h3 {
 }
 
 .portal-card {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
     padding: 34px;
 }
 
@@ -396,7 +399,33 @@ h3 {
     font-size: 1.05rem;
 }
 
+.portal-points {
+    display: grid;
+    gap: 18px;
+    margin-top: 26px;
+}
+
+.portal-points div {
+    padding-top: 18px;
+    border-top: 1px solid var(--line);
+}
+
+.portal-points span {
+    display: block;
+    margin-bottom: 6px;
+    color: var(--gold);
+    font-weight: 850;
+}
+
+.portal-points p {
+    margin-bottom: 0;
+    color: var(--muted);
+}
+
 .portal-preview {
+    display: grid;
+    align-content: stretch;
+    height: 100%;
     padding: 18px;
 }
 
@@ -404,6 +433,7 @@ h3 {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    min-height: 25%;
     gap: 18px;
     padding: 20px;
     border-bottom: 1px solid var(--line);
@@ -420,8 +450,18 @@ h3 {
 
 .booking-panel,
 .form-panel {
+    display: flex;
+    flex-direction: column;
     min-height: 100%;
+    height: 100%;
     padding: 28px;
+}
+
+.booking-placeholder,
+#contact-form {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
 }
 
 .booking-placeholder h3 {
@@ -430,6 +470,7 @@ h3 {
 }
 
 .calendar-frame {
+    flex: 1;
     margin-top: 28px;
     overflow: hidden;
     min-height: 330px;
@@ -471,7 +512,6 @@ h3 {
 }
 
 #contact-form {
-    display: grid;
     gap: 18px;
 }
 
@@ -520,6 +560,10 @@ textarea:focus {
     background: rgba(7, 20, 38, 0.94);
 }
 
+.form-submit {
+    margin-top: auto;
+}
+
 .form-submit button {
     width: 100%;
     min-height: 54px;
@@ -561,6 +605,22 @@ textarea:focus {
 
 .footer-inner span {
     text-align: right;
+}
+
+.footer-logo-shell {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 14px;
+    border-radius: var(--radius);
+    background: var(--white);
+    box-shadow: 0 14px 34px rgba(255, 255, 255, 0.08);
+}
+
+.footer-logo-shell img {
+    display: block;
+    width: auto;
+    height: 64px;
 }
 
 @media (max-width: 980px) {
@@ -678,5 +738,9 @@ textarea:focus {
 
     .footer-inner span {
         text-align: left;
+    }
+
+    .footer-logo-shell img {
+        height: 52px;
     }
 }
