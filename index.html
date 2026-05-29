@@ -1,4 +1,3 @@
-<!-- index.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,13 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vantaire Systems | Operational Automation & Systems Engineering</title>
     <meta name="description" content="Vantaire Systems architects operational automation pipelines, custom n8n workflow systems, CRM integrations, and enterprise-grade infrastructure upkeep for scale-ready B2B teams.">
+    <link rel="icon" type="image/png" href="icon.png">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header class="site-header">
         <nav class="nav container" aria-label="Primary navigation">
             <a href="#" class="brand" aria-label="Vantaire Systems home">
-                <span class="brand-mark" aria-hidden="true"></span>
+                <img src="icon.png" alt="" class="brand-mark" aria-hidden="true">
                 <span>Vantaire Systems</span>
             </a>
 
@@ -30,7 +30,11 @@
             <div class="container hero-grid">
                 <div class="hero-copy">
                     <p class="eyebrow">Operational Automation · Systems Engineering · n8n Infrastructure</p>
-                    <h1>Engineered Efficiency for Scale-Ready Enterprises.</h1>
+                    <h1>
+                        Engineered Efficiency<br>
+                        for Scale&#8209;Ready<br>
+                        Enterprises.
+                    </h1>
                     <p class="hero-subtitle">
                         We architect end-to-end operational pipelines, eliminate manual data bottlenecks, and deploy custom n8n workflow systems that run your business on autopilot.
                     </p>
@@ -163,7 +167,7 @@
                     </div>
                     <div class="portal-row">
                         <span>Retainer Oversight</span>
-                        <strong>Weekly</strong>
+                        <strong>Active</strong>
                     </div>
                 </div>
             </div>
@@ -182,14 +186,14 @@
                             <p class="eyebrow">Direct Booking</p>
                             <h3>Systems Optimization Strategy Session</h3>
                             <p>
-                                A 30-minute Calendly scheduling frame will sit here for qualified operators, founders, and enterprise teams ready to evaluate automation leverage.
+                                Schedule a 30-minute strategy session to evaluate your current operational bottlenecks, automation opportunities, and systems architecture needs.
                             </p>
-                            <div class="calendar-frame" aria-label="Calendly booking placeholder">
-                                <div class="calendar-topbar"></div>
-                                <div class="calendar-content">
-                                    <span>30 min</span>
-                                    <strong>Calendly Embed Placeholder</strong>
-                                    <small>Connect calendar availability here</small>
+
+                            <div class="calendar-frame" aria-label="Calendly booking calendar">
+                                <div
+                                    class="calendly-inline-widget"
+                                    data-url="https://calendly.com/cayden-mcguiresurrency-vantairesystems/30min"
+                                    style="min-width:320px;height:680px;">
                                 </div>
                             </div>
                         </div>
@@ -229,9 +233,13 @@
 
     <footer class="site-footer">
         <div class="container footer-inner">
-            <p>Vantaire Systems</p>
+            <div>
+                <img src="logo.png" alt="Vantaire Systems" style="height:64px;width:auto;display:block;border-radius:6px;">
+            </div>
             <span>Operational automation and systems engineering for scale-ready enterprises.</span>
         </div>
     </footer>
+
+    <script src="https://assets.calendly.com/assets/external/widget.js" async></script>
 </body>
 </html>
