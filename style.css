@@ -74,7 +74,8 @@ textarea {
     gap: 32px;
 }
 
-.brand {
+.brand,
+.thank-you-brand {
     display: inline-flex;
     align-items: center;
     gap: 12px;
@@ -160,21 +161,23 @@ h1 {
     margin-bottom: 24px;
     color: var(--white);
     font-size: clamp(3rem, 5.8vw, 5.7rem);
-    line-height: 1.03;
+    line-height: 1.08;
     letter-spacing: 0;
+    text-wrap: balance;
 }
 
 h2 {
     color: var(--white);
     font-size: clamp(2rem, 4vw, 3.45rem);
-    line-height: 1.08;
+    line-height: 1.12;
     letter-spacing: 0;
+    text-wrap: balance;
 }
 
 h3 {
     color: var(--white);
     font-size: 1.32rem;
-    line-height: 1.22;
+    line-height: 1.25;
 }
 
 .hero-subtitle {
@@ -407,8 +410,8 @@ h3 {
 .portal-card h2 {
     max-width: 600px;
     margin-bottom: 28px;
-    font-size: clamp(2.2rem, 3.5vw, 4rem);
-    line-height: 1.08;
+    font-size: clamp(2.15rem, 3.2vw, 3.65rem);
+    line-height: 1.14;
 }
 
 .portal-card p {
@@ -619,6 +622,7 @@ textarea:focus {
 
 .thank-you-page {
     min-height: 100vh;
+    overflow-x: hidden;
 }
 
 .thank-you-main {
@@ -634,24 +638,23 @@ textarea:focus {
 }
 
 .thank-you-brand {
-    display: inline-flex;
-    align-items: center;
-    gap: 12px;
-    margin-bottom: 42px;
-    color: var(--white);
+    margin-bottom: 34px;
     font-weight: 800;
 }
 
 .thank-you-card h1 {
     max-width: 680px;
-    font-size: clamp(2.4rem, 6vw, 4.6rem);
-    line-height: 1.03;
+    margin-bottom: 22px;
+    font-size: clamp(2.35rem, 5vw, 4.15rem);
+    line-height: 1.1;
+    text-wrap: balance;
 }
 
 .thank-you-card p:not(.eyebrow) {
-    max-width: 620px;
+    max-width: 640px;
+    margin-bottom: 16px;
     color: var(--muted);
-    font-size: 1.1rem;
+    font-size: 1.08rem;
 }
 
 .thank-you-actions {
@@ -695,7 +698,7 @@ textarea:focus {
     }
 
     h1 {
-        font-size: clamp(3rem, 10vw, 5rem);
+        font-size: clamp(3rem, 9vw, 4.8rem);
     }
 
     .hero-panel {
@@ -751,14 +754,14 @@ textarea:focus {
     }
 
     h1 {
-        font-size: 2.85rem;
-        line-height: 1.05;
+        font-size: 2.65rem;
+        line-height: 1.1;
     }
 
     h2,
     .portal-card h2 {
-        font-size: 2.25rem;
-        line-height: 1.12;
+        font-size: 2.15rem;
+        line-height: 1.16;
     }
 
     .hero-actions,
@@ -812,12 +815,17 @@ textarea:focus {
         height: 46px;
     }
 
+    .thank-you-main {
+        padding: 28px 14px;
+    }
+
     .thank-you-card {
         padding: 28px;
     }
 
     .thank-you-card h1 {
-        font-size: 2.45rem;
+        font-size: 2.15rem;
+        line-height: 1.14;
     }
 
     .thank-you-actions,
